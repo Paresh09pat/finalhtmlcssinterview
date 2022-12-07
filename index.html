@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+<form>
+
+    <label for="name">Name  :  <input type="text" name="name" id="name" placeholder="name" ></label> <br><br
+    <label for="Contact">contact  :  <input type="number" name="Contact" id="Contact" placeholder="Contact" ></label> <br><br
+    <label for="email">Email  :  <input type="email" name="email" id="email" ></label> <br><br>
+
+    <label>Radio : </label>
+    <label for="radio"> Mern : <input type="radio" name="radio" value="mern"></label>
+    <label for="radio"> mean :<input type="radio" name="radio" value="mean"></label>
+    <label for="radio"> Js : <input type="radio" name="radio" value="js"></label>
+<br><br>
+    <label>Checkbox : </label>
+    <label for="Checkbox"> Mern : <input type="Checkbox" name="radio1" value="mern"></label>
+    <label for="Checkbox"> mean :<input type="Checkbox" name="radio2" value="mean"></label>
+    <label for="Checkbox"> Js : <input type="Checkbox" name="radio3" value="js"></label>
+
+<br><br>
+    <input type="submit" value="submit" name="submit">
+</form>
+    
+<!-- ================================================================= -->
+
+<table border="1px">
+
+    <tr>
+        <th colspan="2">Name</th>
+        <th>Salary</th>
+    </tr>
+
+    <tr>
+        <td rowspan="2">Paresh</td>
+     
+        <td>28588</td>
+    </tr>
+    <tr>
+       
+        <td>tala</td>
+        <td>45412</td>
+    </tr>
+</table>
+
+
+<!-- ======================================================== -->
+<ol>
+    <li>Tea :
+        <ol>
+            <li>sugar</li>
+            <li>w/o sugar</li>
+        </ol>
+        
+    </li>
+    <li>Coffe :
+        <ol>
+            <li>Hot</li>
+            <li>Cold</li>
+        </ol>
+    </li>
+</ol>
+
+<!-- ------------------------------------------------------- -->
+<style>
+    .container{
+        width: 200px;
+        height: 200px;
+        background-color: red;
+        transition: width 4s;
+    }
+
+    .container:hover{
+        width: 500px;
+    }
+</style>
+
+<div class="container"></div>
+<!-- ============================================================== -->
+<!-- combinators -->
+<style>
+    .com p{
+        color: red;
+    }
+</style>
+
+
+<div class="com">
+<p> Hello combinators</p>
+<p> Hello combinators</p>
+<div>
+    <p> Hello combinators</p>
+</div>
+<p> Hello combinators</p>
+<p> Hello combinators</p>
+<p> Hello combinators</p>
+</div>
+
+<!-- ----------------------------------------- -->
+
+<style>
+.main{
+display: flex;
+flex-direction: row;
+}
+
+.cards{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    border: 2px solid blue;
+    margin: 5px;
+}
+
+@media screen and (max-width:800px){
+    .main{
+        flex-direction: column;
+    }
+    .cards{
+        background-color: aqua;
+    }
+}
+@media screen and (max-width:350px){
+    .main{
+        flex-direction: column;
+    }
+    .cards{
+        background-color: blue;
+    }
+}
+
+</style>
+
+<div class="main">
+
+<div class="cards"> Any text 1</div>
+<div class="cards"> Any text 2</div>
+<div class="cards"> Any text 3</div>
+<div class="cards"> Any text 4</div>
+</div>
+
+<!-- ---------------------------------------------------------------- -->
+
+<style>
+    .circle{
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        animation: ani 5s infinite;
+        animation-delay: 2s;
+        background-color: darkgray;
+    }
+
+    @keyframes ani{
+0%{background-color:red;}
+25%{background-color:aqua;}
+50%{background-color:yellow;}
+75%{background-color:violet;}
+100%{background-color:violet;}
+
+    }
+</style>
+
+
+<div class="circle"></div>
+
+
+
+
+
+
+
+
+</body>
+</html>
